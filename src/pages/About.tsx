@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BoardMemberCard from "@/components/BoardMemberCard";
-import SponsorCard from "@/components/SponsorCard";
+import BoardMemberCard from "@/components/BoardMemberCard"; 
+import SponsorCard from "@/components/SponsorCard";   
 import { boardMembers, sponsors } from "@/data/team";
 import { Heart, Target, Users } from "lucide-react";
 import SponsorsSection from "@/components/SponsorsSection";
@@ -87,8 +87,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Sponsors */}
+      
       <SponsorsSection />
 
 
