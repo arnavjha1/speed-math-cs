@@ -39,7 +39,7 @@ const Hero = () => {
       
       <div className="grid grid-cols-3 gap-8 md:gap-16 text-center">
         <div>
-          <div className="text-4xl md:text-5xl font-display font-bold text-gradient-speed">500+</div>
+          <div className="text-4xl md:text-5xl font-display font-bold text-gradient-speed">200+</div>
           <div className="text-sm md:text-base text-muted-foreground mt-1">Students Taught</div>
         </div>
         <div>
@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="text-sm md:text-base text-muted-foreground mt-1">Course Levels</div>
         </div>
         <div>
-          <div className="text-4xl md:text-5xl font-display font-bold text-gradient-speed">$5K+</div>
+          <div className="text-4xl md:text-5xl font-display font-bold text-gradient-speed">$200+</div>
           <div className="text-sm md:text-base text-muted-foreground mt-1">Raised</div>
         </div>
       </div>
