@@ -17,39 +17,27 @@ export interface Sponsor {
 export const boardMembers: BoardMember[] = [
   {
     id: "1",
-    name: "Sarah Chen",
-    role: "Executive Director",
-    bio: "Former software engineer at Google with a passion for making coding education accessible to everyone."
+    name: "Arnav Jha",
+    role: "President & Co-Founder",
+    bio: "Software engineer passionate about leveraging technology to create educational opportunities for all."
   },
   {
     id: "2",
-    name: "Marcus Johnson",
-    role: "Board President",
-    bio: "Education advocate and entrepreneur dedicated to bridging the digital divide in underserved communities."
+    name: "Sidhaanth Kapoor",
+    role: "Chief Technology Officer & Co-Founder",
+    bio: "Full-stack developer dedicated to building scalable tech solutions for non-profits."
   },
   {
     id: "3",
-    name: "Dr. Emily Rodriguez",
-    role: "Head of Curriculum",
-    bio: "Computer Science professor specializing in innovative teaching methods for programming education."
+    name: "Sreejith Sreekumar",
+    role: "Chief Executive Officer & Co-Founder",
+    bio: "Aspiring entrepreneur focused on driving social impact through innovative educational programs."
   },
   {
     id: "4",
-    name: "David Kim",
-    role: "Director of Operations",
-    bio: "Non-profit veteran with 15 years of experience building sustainable educational programs."
-  },
-  {
-    id: "5",
-    name: "Aisha Patel",
-    role: "Community Outreach Lead",
-    bio: "Dedicated to connecting students with mentors and career opportunities in tech."
-  },
-  {
-    id: "6",
-    name: "James O'Brien",
-    role: "Treasurer",
-    bio: "CPA and former startup CFO committed to financial transparency in non-profit organizations."
+    name: "Sathvik Darbha",
+    role: "Board Advisor & Co-Founder",
+    bio: "Experienced tech leader committed to mentoring the next generation of developers."
   }
 ];
 
