@@ -56,38 +56,8 @@ export const boardMembers: BoardMember[] = [
 export const sponsors: Sponsor[] = [
   {
     id: "1",
-    name: "TechForward Foundation",
-    tier: "platinum",
-    website: "https://example.com"
-  },
-  {
-    id: "2",
-    name: "CodeCraft Industries",
-    tier: "platinum",
-    website: "https://example.com"
-  },
-  {
-    id: "3",
-    name: "Digital Futures Inc.",
-    tier: "gold",
-    website: "https://example.com"
-  },
-  {
-    id: "4",
-    name: "ByteSize Learning",
-    tier: "gold",
-    website: "https://example.com"
-  },
-  {
-    id: "5",
-    name: "Community Tech Hub",
-    tier: "silver",
-    website: "https://example.com"
-  },
-  {
-    id: "6",
-    name: "Local Dev Group",
+    name: "FlatLogic",
     tier: "bronze",
-    website: "https://example.com"
+    website: "https://flatlogic.com/"
   }
 ];

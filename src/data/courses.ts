@@ -51,9 +51,9 @@ export const courses: Course[] = [
         description: "Dive deeper into Python with object-oriented programming, APIs, and real-world projects.",
         topics: [
           "Object-Oriented Programming",
-          "Working with APIs",
           "Data Processing with Pandas",
           "Introduction to Machine Learning",
+          "Working with APIs",
           "Final Capstone Project"
         ],
         duration: "5 days",
