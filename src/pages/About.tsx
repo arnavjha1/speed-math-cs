@@ -5,6 +5,8 @@ import SponsorCard from "@/components/SponsorCard";
 import { boardMembers, sponsors } from "@/data/team";
 import { Heart, Target, Users } from "lucide-react";
 import SponsorsSection from "@/components/SponsorsSection";
+import { courses, formatDuration } from "@/data/courses";
+
 
 const About = () => {
   const platinumSponsors = sponsors.filter(s => s.tier === "platinum");

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { courses } from "@/data/courses";
+import { courses, formatDuration } from "@/data/courses";
 import { cn } from "@/lib/utils";
 import { Clock, ArrowRight } from "lucide-react";
+
 
 const LevelLadder = () => {
   return (
@@ -54,7 +55,7 @@ const LevelLadder = () => {
                           </span>
                           <div className="flex items-center gap-1.5 text-muted-foreground">
                             <Clock className="w-3.5 h-3.5" />
-                            <span className="text-xs">{level.duration}</span>
+                            <span className="text-xs">{formatDuration(level.duration)}</span>
                           </div>
                         </div>
 

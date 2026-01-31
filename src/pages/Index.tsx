@@ -4,6 +4,7 @@ import LevelLadder from "@/components/LevelLadder";
 import SponsorsSection from "@/components/SponsorsSection";
 import Footer from "@/components/Footer";
 
+
 const Index = () => {
   return (
     <div className="min-h-screen">

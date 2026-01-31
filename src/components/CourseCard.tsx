@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Clock, CheckCircle2, ArrowRight } from "lucide-react";
-import { CourseLevel } from "@/data/courses";
+import { CourseLevel, formatDuration } from "@/data/courses";
 import { cn } from "@/lib/utils";
+import { courses} from "@/data/courses";
+
 
 interface CourseCardProps {
   level: CourseLevel;
@@ -54,7 +56,7 @@ const CourseCard = ({ level, courseColor, courseIcon, courseName }: CourseCardPr
         </div>
         <div className="flex items-center gap-2 text-muted-foreground">
           <Clock className="w-4 h-4" />
-          <span className="text-sm font-medium">{level.duration}</span>
+          <span className="text-sm font-medium">{formatDuration(level.duration)}</span>
         </div>
       </div>
 
@@ -93,7 +95,7 @@ const CourseCard = ({ level, courseColor, courseIcon, courseName }: CourseCardPr
         </Button>
       ) : (
         <Button variant="secondary" className="w-full" disabled>
-          Coming Soon
+          5 days long
         </Button>
       )}
     </div>

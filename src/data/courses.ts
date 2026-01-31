@@ -18,6 +18,24 @@ export interface Course {
   levels: CourseLevel[];
 }
 
+export function formatDuration(duration: string): string {
+  const start = new Date(duration);
+  if (isNaN(start.getTime())) return duration; // fallback for non-date strings
+
+  const today = new Date();
+  start.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+
+  const diffDays = Math.ceil(
+    (start.getTime() - today.getTime()) / 86400000
+  );
+
+  if (diffDays > 0) return `in ${diffDays} day${diffDays === 1 ? "" : "s"}`;
+  if (diffDays === 0) return "starts today";
+  return `${Math.abs(diffDays)} day${Math.abs(diffDays) === 1 ? "" : "s"} ago`;
+}
+
+
 export const courses: Course[] = [
   {
     id: "python",
@@ -39,7 +57,7 @@ export const courses: Course[] = [
           "Basic File I/O",
           "Introduction to Problem Solving"
         ],
-        duration: "5 days",
+        duration: "2026-02-16",
         isActive: true,
         joinLink: "/join/python-1"
       },
@@ -56,7 +74,7 @@ export const courses: Course[] = [
           "Working with APIs",
           "Final Capstone Project"
         ],
-        duration: "5 days",
+        duration: "2026-02-16",
         isActive: true,
         joinLink: "/join/python-2"
       }
@@ -82,7 +100,7 @@ export const courses: Course[] = [
           "DOM Manipulation",
           "Responsive Design"
         ],
-        duration: "5 days",
+        duration: "2026-03-16",
         isActive: false
       },
       {
@@ -99,7 +117,7 @@ export const courses: Course[] = [
           "Authentication",
           "Deployment & Hosting"
         ],
-        duration: "5 days",
+        duration: "2026-03-16",
         isActive: false
       }
     ]
