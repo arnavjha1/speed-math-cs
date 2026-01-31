@@ -77,7 +77,7 @@ const JoinClass = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-primary" />
-                  <span>Starting Soon</span>
+                  <span>Feb 16-20</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-primary" />
@@ -103,38 +103,13 @@ const JoinClass = () => {
                 <h3 className="font-display font-bold text-2xl mb-2">Join This Class</h3>
                 <p className="text-muted-foreground mb-6">
                   Fill out the form below to register for this course. 
-                  We'll contact you with next steps.
+                  There are limited spots available, so secure your place today!
                 </p>
 
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Full Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email Address</label>
-                    <input 
-                      type="email" 
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="you@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Why do you want to learn to code?</label>
-                    <textarea 
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                      rows={3}
-                      placeholder="Tell us a bit about yourself..."
-                    />
-                  </div>
-                  <Button variant="hero" size="lg" className="w-full">
-                    Submit Application
-                  </Button>
-                </form>
+                
+                <Button variant="hero" size="lg" className="w-full" onClick={() => window.location.href='https://forms.gle/61zptcWktn9pe9ge8'}>
+                  Sign Up
+                </Button>
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
                   100% free. No credit card required.
