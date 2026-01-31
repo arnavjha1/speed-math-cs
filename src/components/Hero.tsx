@@ -33,7 +33,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto font-mono">
-          Free coding education for students of all backgrounds
+          Fully dedicated to free coding python and web development education for students of all backgrounds.
         </p>
       </div>
       
