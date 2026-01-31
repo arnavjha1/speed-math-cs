@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { courses } from "@/data/courses";
+import { courses, formatDateRange, formatDuration } from "@/data/courses";
 import { ArrowLeft, Calendar, Clock, CheckCircle2, Users } from "lucide-react";
 
 const JoinClass = () => {
@@ -73,11 +73,11 @@ const JoinClass = () => {
               <div className="flex flex-wrap gap-6 mb-8">
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5 text-primary" />
-                  <span>{foundLevel.duration}</span>
+                  <span>{formatDuration(foundLevel.duration)}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-primary" />
-                  <span>Feb 16-20</span>
+                  <span>{formatDateRange(foundLevel.duration)}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-primary" />

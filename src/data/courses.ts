@@ -35,6 +35,28 @@ export function formatDuration(duration: string): string {
   return `${Math.abs(diffDays)} day${Math.abs(diffDays) === 1 ? "" : "s"} ago`;
 }
 
+export function formatDateRange(startDate: string): string {
+  const start = new Date(startDate);
+  if (isNaN(start.getTime())) return startDate; // fallback
+
+  const end = new Date(start);
+  end.setDate(start.getDate() + 4);
+
+  const startMonth = start.toLocaleString("en-US", { month: "short" });
+  const endMonth = end.toLocaleString("en-US", { month: "short" });
+
+  const startDay = start.getDate();
+  const endDay = end.getDate();
+
+  // Same month: Feb 16–20
+  if (startMonth === endMonth) {
+    return `${startMonth} ${startDay}–${endDay}`;
+  }
+
+  // Different month: Feb 28 – Mar 3
+  return `${startMonth} ${startDay} – ${endMonth} ${endDay}`;
+}
+
 
 export const courses: Course[] = [
   {
