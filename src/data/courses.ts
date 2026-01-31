@@ -50,11 +50,11 @@ export function formatDateRange(startDate: string): string {
 
   // Same month: Feb 16–20
   if (startMonth === endMonth) {
-    return `${startMonth} ${startDay}–${endDay}`;
+    return `${startMonth} ${startDay+1}–${endDay+1}`;
   }
 
   // Different month: Feb 28 – Mar 3
-  return `${startMonth} ${startDay} – ${endMonth} ${endDay}`;
+  return `${startMonth} ${startDay+1} – ${endMonth} ${endDay+1}`;
 }
 
 
