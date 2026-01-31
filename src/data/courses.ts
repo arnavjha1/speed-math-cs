@@ -39,26 +39,26 @@ export const courses: Course[] = [
           "Basic File I/O",
           "Introduction to Problem Solving"
         ],
-        duration: "8 weeks",
+        duration: "5 days",
         isActive: true,
         joinLink: "/join/python-1"
       },
       {
         id: "python-2",
         level: 2,
-        title: "Python Advanced",
+        title: "Advanced Python & Machine Learning",
         subtitle: "Level up your skills",
         description: "Dive deeper into Python with object-oriented programming, APIs, and real-world projects.",
         topics: [
           "Object-Oriented Programming",
-          "Error Handling & Debugging",
           "Working with APIs",
           "Data Processing with Pandas",
-          "Automation Scripts",
+          "Introduction to Machine Learning",
           "Final Capstone Project"
         ],
-        duration: "10 weeks",
-        isActive: false
+        duration: "5 days",
+        isActive: true,
+        joinLink: "/join/python-2"
       }
     ]
   },
@@ -82,9 +82,8 @@ export const courses: Course[] = [
           "DOM Manipulation",
           "Responsive Design"
         ],
-        duration: "8 weeks",
-        isActive: true,
-        joinLink: "/join/webdev-1"
+        duration: "5 days",
+        isActive: false
       },
       {
         id: "webdev-2",
@@ -100,9 +99,8 @@ export const courses: Course[] = [
           "Authentication",
           "Deployment & Hosting"
         ],
-        duration: "12 weeks",
-        isActive: true,
-        joinLink: "/join/webdev-2"
+        duration: "5 days",
+        isActive: false
       }
     ]
   }
