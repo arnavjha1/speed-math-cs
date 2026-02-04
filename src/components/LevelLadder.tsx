@@ -91,10 +91,17 @@ const LevelLadder = () => {
                           )}
                         </div>
                         
-                        {isActive && level.joinLink && (
+                        {level.joinLink && (
                           <Link
-                            to={level.joinLink}
-                            className="mt-3 inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors w-fit shadow-button"
+                            to={isActive ? level.joinLink : "#"}
+                            aria-disabled={!isActive}
+                            tabIndex={isActive ? 0 : -1}
+                            className={cn(
+                              "mt-3 inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold w-fit transition-all",
+                              isActive
+                                ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-button"
+                                : "bg-muted text-muted-foreground cursor-not-allowed pointer-events-none opacity-60"
+                            )}
                           >
                             Join Class
                             <ArrowRight className="w-4 h-4" />
