@@ -122,8 +122,9 @@ export const courses: Course[] = [
           "DOM Manipulation",
           "Responsive Design"
         ],
-        duration: "2026-03-16",
-        isActive: false
+        duration: "2026-02-12",
+        isActive: true,
+        joinLink: "/join/webdev-1"
       },
       {
         id: "webdev-2",
@@ -140,7 +141,8 @@ export const courses: Course[] = [
           "Deployment & Hosting"
         ],
         duration: "2026-03-16",
-        isActive: false
+        isActive: false,
+        joinLink: "/join/webdev-2"
       }
     ]
   }
