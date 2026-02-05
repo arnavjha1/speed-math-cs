@@ -103,7 +103,7 @@ export const courses: Course[] = [
       {
         id: "python-3",
         level: 3,
-        title: "Python for Data Science",
+        title: "Python for Data Science & AI (Industry-Level Coding)",
         subtitle: "Master data analysis",
         description: "Learn to analyze and visualize data using Python libraries like NumPy, Pandas, and Matplotlib.",
         topics: [
