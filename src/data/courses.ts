@@ -99,6 +99,23 @@ export const courses: Course[] = [
         duration: "2026-02-16",
         isActive: true,
         joinLink: "/join/python-2"
+      },
+      {
+        id: "python-3",
+        level: 3,
+        title: "Python for Data Science",
+        subtitle: "Master data analysis",
+        description: "Learn to analyze and visualize data using Python libraries like NumPy, Pandas, and Matplotlib.",
+        topics: [
+          "Data Analysis with NumPy & Pandas",
+          "Data Visualization with Matplotlib & Seaborn",
+          "Statistical Analysis",
+          "Working with Real-world Datasets",
+          "Data Science Project Workflow"
+        ],
+        duration: "2026-03-16",
+        isActive: false,
+        joinLink: "/join/python-3"
       }
     ]
   },
@@ -140,7 +157,7 @@ export const courses: Course[] = [
           "Authentication",
           "Deployment & Hosting"
         ],
-        duration: "2026-03-16",
+        duration: "2026-04-13",
         isActive: false,
         joinLink: "/join/webdev-2"
       }
