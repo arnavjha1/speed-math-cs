@@ -134,9 +134,9 @@ export const courses: Course[] = [
         description: "Master React, work with databases, and build complete web applications ready for deployment.",
         topics: [
           "React Fundamentals",
-          "State Management",
+          "SQL Databases & Querying with PostgreSQL",
           "API Integration",
-          "Database Basics",
+          "Express.js & Backend Basics",
           "Authentication",
           "Deployment & Hosting"
         ],
